@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CT VISUAL STUDIO</title>
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CT Visual Studio | Creative Photography</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
   <style>
     .hero {
-      background: url('banner.jpg') center center/cover no-repeat;
       height: 90vh;
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('1.jfif') center center / cover no-repeat;
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-shadow: 2px 2px 4px #000;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
+
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">MySite</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="CT Visual Studio" height="40" class="d-inline-block align-text-top">
+        CT Visual Studio
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,139 +56,246 @@
       </div>
     </div>
   </nav>
-
+   
+  <!-- Hero -->
   <header class="hero">
-    <h1>Welcome to My First Website </h1>
-    <style>
-.hero {
-  height: 90vh;
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* transparent black overlay */
-    url('1.jfif') center center / cover no-repeat;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-</style>
+    <h1 class="animate__animated animate__fadeInDown">Welcome to CT Visual Studio</h1>
   </header>
    
-
-<div class="d-flex justify-content-center align-items-center" style="min-height: 150vh;">
-  <div id="carouselExample" class="carousel slide" style="max-width: 600px; width: 100%;">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="New folder/t (10).jpg" class="d-block w-100" height="600px" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="New folder/t (1).jpg" class="d-block w-100" height="600" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="New folder/t (2).jpg" class="d-block w-100" height="600" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="New folder/t (3).jpg" class="d-block w-100" height="600" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="New folder/t (4).jpg" class="d-block w-100" height="600" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="New folder/t (7).jpg" class="d-block w-100" height="600" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
+   <section class="cta-banner d-flex flex-column justify-content-center align-items-center text-center">
+  <h2 class="display-4 text-white mb-3">Your Story Told Through Images</h2>
+  <p class="lead text-white-50 mb-4">Professional Photography | Weddings | Events | Portraits</p>
+  <a href="contact.html" class="btn btn-lg btn-outline-light">Get in Touch</a>
+</section>
 
 
-
-<section class="container py-5 text-center">
-  <h2 class="mb-4">Capturing Life, One Frame at a Time</h2>
-  <p class="lead">At CT Visual Studio, photography is more than just pictures — it's storytelling through light, emotion, and timing.</p>
-
-  <div class="row mt-4">
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="New folder/t (9).jpg" class="card-img-top" alt="Wedding Photography">
-        <div class="card-body">
-          <h5 class="card-title">Weddings</h5>
-          <p class="card-text">We capture the raw emotions, the laughter, and the tears on the most special day of your life.</p>
+  <!-- Carousel -->
+  <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div id="carouselExample" class="carousel slide" style="max-width: 600px; width: 100%;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="New folder/t (10).jpg" class="d-block w-100" height="600" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="New folder/t (1).jpg" class="d-block w-100" height="600" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="New folder/t (2).jpg" class="d-block w-100" height="600" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="New folder/t (3).jpg" class="d-block w-100" height="600" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="New folder/t (4).jpg" class="d-block w-100" height="600" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="New folder/t (7).jpg" class="d-block w-100" height="600" alt="...">
         </div>
       </div>
-    </div>
-    
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="DSC_2362.jpg" class="card-img-top" alt="Portrait Photography">
-        <div class="card-body">
-          <h5 class="card-title">Portraits</h5>
-          <p class="card-text">Bold, timeless, and creative portraits that reflect your true personality and story.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="DSC_4687.jpg" class="card-img-top" alt="Event Photography">
-        <div class="card-body">
-          <h5 class="card-title">Events</h5>
-          <p class="card-text">From birthdays to corporate events, we freeze moments so you can relive them forever.</p>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
 
-  <p class="mt-4">Let CT Visual Studio bring your vision to life. We don't just take pictures — we craft memories.</p>
+  <!-- Explore Section -->
+  <section class="text-center p-4 bg-light">
+    <h2 class="text-dark">Explore Our Work</h2>
+    <p class="lead text-muted">From portraits to events, we tell stories with light.</p>
+  </section>
+    
+  <!-- Services -->
+  <section class="container py-5 text-center">
+    <h2 class="mb-4">Capturing Life, One Frame at a Time</h2>
+    <p class="lead">At CT Visual Studio, photography is more than just pictures — it's storytelling through light, emotion, and timing.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="New folder/t (9).jpg" class="card-img-top" alt="Wedding Photography">
+          <div class="card-body">
+            <h5 class="card-title">Weddings</h5>
+            <p class="card-text">We capture the raw emotions, the laughter, and the tears on the most special day of your life.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="DSC_2362.jpg" class="card-img-top" alt="Portrait Photography">
+          <div class="card-body">
+            <h5 class="card-title">Portraits</h5>
+            <p class="card-text">Bold, timeless, and creative portraits that reflect your true personality and story.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="DSC_4687.jpg" class="card-img-top" alt="Event Photography">
+          <div class="card-body">
+            <h5 class="card-title">Events</h5>
+            <p class="card-text">From birthdays to corporate events, we freeze moments so you can relive them forever.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-4">Let CT Visual Studio bring your vision to life. We don't just take pictures — we craft memories.</p>
+  </section> 
+
+
+
+  <section class="services-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 text-dark">Our Services</h2>
+    <p class="mb-5 text-muted">We offer a range of creative photography solutions to meet your needs.</p>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="service-card p-4 shadow-sm bg-white h-100 rounded">
+          <i class="bi bi-camera display-4 text-primary mb-3"></i>
+          <h5 class="mb-2">Event Photography</h5>
+          <p class="text-muted">From birthdays to conferences, we cover it all with stunning visuals and lasting memories.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="service-card p-4 shadow-sm bg-white h-100 rounded">
+          <i class="bi bi-people-fill display-4 text-success mb-3"></i>
+          <h5 class="mb-2">Portraits & Studio Shoots</h5>
+          <p class="text-muted">Studio-quality portraits with professional lighting and creative direction.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="service-card p-4 shadow-sm bg-white h-100 rounded">
+          <i class="bi bi-heart-fill display-4 text-danger mb-3"></i>
+          <h5 class="mb-2">Wedding Photography</h5>
+          <p class="text-muted">Elegant, emotional wedding coverage to relive your big day for a lifetime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+  
+<section class="py-5 text-center bg-white">
+  <div class="container">
+    <h3 class="text-primary mb-4">Videography Services</h3>
+    <ul class="list-unstyled text-muted">
+      <li> Real Estate Coverage</li>
+      <li> Wedding Coverage</li>
+      <li> Event Coverage</li>
+      <li> Drone Shoots</li>
+      <li> Talk Show Production</li>
+      <li> Camera Rental (6K)</li>
+      <li> Editing & Training</li>
+    </ul>
+  </div>
+</section>
+
+<section class="py-5 text-center bg-light">
+  <div class="container">
+    <h3 class="text-success mb-4">Photography Services</h3>
+    <ul class="list-unstyled text-muted">
+      <li> Kiddies Shoot</li>
+      <li> Wedding Shoot</li>
+      <li> Maternity Shoot</li>
+      <li> Model Shoot</li>
+      <li> Family Portraits</li>
+      <li> Event Shoots</li>
+      <li> Instant Passport Photos</li>
+    </ul>
+  </div>
+</section>
+
+<section class="py-5 text-center bg-white">
+  <div class="container">
+    <h3 class="text-dark mb-4">Other Creative Services</h3>
+    <ul class="list-inline text-muted">
+      <li class="list-inline-item">📘 Photobooks</li>
+      <li class="list-inline-item">🖼️ Customized Photo Frames</li>
+      <li class="list-inline-item">☕ Mug Cup Designs</li>
+      <li class="list-inline-item">👕 Printing on Clothes</li>
+      <li class="list-inline-item"></li>
+    </ul>
+  </div>
 </section>
 
 
 
 
+  <section class="py-5 bg-dark text-white text-center">
+  <h4>Want breathtaking photos?</h4>
+  <a href="contact.html" class="btn btn-primary btn-lg mt-3">Book Your Session</a>
+</section>
+
+
+
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center p-4">
-  <div class="container">
-    <h5 class="mb-3">CT VISUAL STUDIO</h5>
-    <p class="mb-2">
-      CT Visual Studio is dedicated to capturing your best moments through the lens. From weddings and portraits to events and lifestyle shoots, we bring your story to life one frame at a time.
-    </p>
+    <div class="container">
+      <h5 class="mb-3">CT VISUAL STUDIO</h5>
+      <p class="mb-2">
+        CT Visual Studio is dedicated to capturing your best moments through the lens. From weddings and portraits to events and lifestyle shoots, we bring your story to life one frame at a time.
+      </p>
+      <p class="mb-0">
+        📍 Benin City, Nigeria &nbsp; | &nbsp; 📞 08059989192 &nbsp; | &nbsp; 📧 ctvisualstudio@example.com
+      </p>
 
-    <p class="mb-0">
-      📍 Benin City, Nigeria &nbsp; | &nbsp; 📞 08059989192 &nbsp; | &nbsp; 📧 ctvisualstudio@example.com
-    </p>
+      <a href="https://wa.me/+2348059989192" target="_blank" class="btn btn-success mt-3">
+        <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+      </a>
 
-    <div class="mt-3">
-      <a href="index.html" class="text-light text-decoration-none me-3">Home</a>
-      <a href="about.html" class="text-light text-decoration-none me-3">About</a>
-      <a href="contact.html" class="text-light text-decoration-none">Contact</a>
+      <div class="mt-3">
+        <a href="index.html" class="text-light text-decoration-none me-3">Home</a>
+        <a href="about.html" class="text-light text-decoration-none me-3">About</a>
+        <a href="contact.html" class="text-light text-decoration-none">Contact</a>
+      </div>
+
+      <hr class="bg-light my-3" />
+      <small class="text-muted">&copy; 2025 CT Visual Studio. All rights reserved.</small>
     </div>
+  </footer>
 
-    <hr class="bg-light my-3" />
-    <small class="text-muted">&copy; 2025 CT Visual Studio. All rights reserved.</small>
+
+  <section class="bg-secondary text-white text-center py-5">
+  <div class="container">
+    <h3 class="mb-4">What Clients Say</h3>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <blockquote class="blockquote">
+          <p>CT Visual Studio captured our wedding day beautifully. Can't recommend them enough!</p>
+          <footer class="blockquote-footer text-white">Jane &amp; John</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4 mb-3">
+        <blockquote class="blockquote">
+          <p>Stunning portraits that made me feel confident and at ease.</p>
+          <footer class="blockquote-footer text-white">Mark D.</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4 mb-3">
+        <blockquote class="blockquote">
+          <p>Amazing creativity and professionalism from start to finish.</p>
+          <footer class="blockquote-footer text-white">Lisa R.</footer>
+        </blockquote>
+      </div>
+    </div>
   </div>
-</footer>
+</section>
 
 
-    
-  
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="sytle.css">
-</body>
-</html>
-
-
-
-
-
-
-
-
+  
 </body>
 </html>

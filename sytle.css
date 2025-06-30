@@ -1,15 +1,7 @@
+ul.list-unstyled li::before {
+  content: '✔ ';
+  color: green;
 }
-.{
-    background-color: yellow;
-    padding: 10px;
-}
-.red-box{
-    background-color: crimson;
-    color: #fff;
-    padding: 20px;
-}
+   
 
- .margin-bottom-div{
-    margin-bottom:20px;
-    text-align: center;
-}
+
